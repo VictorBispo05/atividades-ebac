@@ -4,10 +4,6 @@ function Celular(marca, modelo, cor) {
     this.cor = cor;
 }
 
-Celular.prototype.ligar = function() {
-    throw new Error('O método fazerSom deve ser implementado nas subclasses');
-}
-
 function Motorola(marca, modelo, cor) {
     Celular.call(this, marca, modelo, cor);
 }
